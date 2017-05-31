@@ -3,6 +3,9 @@
 #include "key.h"
 #include "sys.h"
 #include "beep.h"
+/*主机启动后，再插入4G模块，以正确加载驱动；
+单片机判断心跳信号，发现主机死机后，重启主机，再上电4G模块
+*/
  int main(void)
  {
 	vu8 key=0;	
